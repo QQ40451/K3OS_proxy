@@ -2,155 +2,69 @@
 address: 0.0.0.0:8888
 username: admin
 password: k3ok.com
-title: "K3OS_PROXY"
-#eth配置
-
-etc:
-  servers:
-    - servername: f2ETC
-      address: tcp://0.0.0.0:8118
-      pool: tcp://etc.f2pool.com:8118
-      wallets: 
-         - wallet: 0x0173ab5bcc37cd11b57f6b8d81cf51533a644779
-           pool: tcp://asia1-etc.ethermine.org:4444
-           name: mmcwallet
-           tax: 01
+title: "k3ok.com"
 
 
-eth:
-  servers:
-    - servername: 666eth
-      address: tcp://0.0.0.0:8558
-      pool: tcp://eth.666pool.com:8558
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
+# eth etc
+servers:
+  - servername: E_ETHSSL
+    coin: eth
+    address: ssl://0.0.0.0:5555
+    pool: tcp://asia2.ethermine.org:14444
+    wallets:
+         - wallet: k20220405
+           pool: ssl://ethssl-asia.f2pool.com:6698
+           name: A22_ES
            tax: 01
-    - servername: XN_ETH
-      address: tcp://0.0.0.0:1558
-      pool: tcp://eth-asia.xnpool.com:1588
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
+  - servername: E_ETH
+    coin: eth
+    address: tcp://0.0.0.0:14444
+    pool: tcp://asia2.ethermine.org:14444
+    wallets:
+         - wallet: k20220405
+           pool: ssl://ethssl-asia.f2pool.com:6698
+           name: A22_E
            tax: 01
-    - servername: binance
-      address: tcp://0.0.0.0:1800
-      pool: tcp://ethash.poolbinance.com:1800
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
+  - servername: F2_ETH
+    coin: eth
+    address: tcp://0.0.0.0:6688
+    pool: ssl://ethssl-asia.f2pool.com:6698
+    wallets:
+         - wallet: k20220405
+           pool: ssl://ethssl-asia.f2pool.com:6698
+           name: A22_F2
            tax: 01
-    - servername: binances
-      address: ssl://0.0.0.0:443
-      pool: tcp://ethash.poolbinance.com:1800
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
+  - servername: F2_ETHSSL
+    coin: eth
+    address: ssl://0.0.0.0:8007
+    pool: ssl://ethssl-asia.f2pool.com:6698
+    wallets:
+         - wallet: llkk123
+           pool: ssl://ethssl-asia.f2pool.com:6698
+           name: A22_F2S
            tax: 01
-    - servername: F2tcp
-      address: tcp://0.0.0.0:6688
-      pool: tcp://eth.f2pool.com:6688
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
+         - wallet: k20220405
+           pool: ssl://ethssl-asia.f2pool.com:6698
+           name: A22
            tax: 01
-    - servername: F2SSL
-      address: ssl://0.0.0.0:8007
-      pool: tcp://eth.f2pool.com:6688
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: spider
-      address: tcp://0.0.0.0:3867
-      pool: tcp://eth-asia.spiderpool.com:3867
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: ethminer
-      address: tcp://0.0.0.0:14444
-      pool: ssl://asia1.ethermine.org:5555
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: ethminerSSL
-      address: ssl://0.0.0.0:5555
-      pool: ssl://asia1.ethermine.org:5555
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: Nano
-      address: tcp://0.0.0.0:9999
-      pool: tcp://eth-asia1.nanopool.org:9999
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: NanoSSL
-      address: ssl://0.0.0.0:9443
-      pool: ssl://eth-asia1.nanopool.org:9433
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: Flex
-      address: tcp://0.0.0.0:13271
-      pool: tcp://hke.fpmirror.com:13271
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: poolin
-      address: tcp://0.0.0.0:700
-      pool: tcp://eth.ss.poolin.one:700
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: poolin_Ltc
-      address: tcp://0.0.0.0:1883
-      pool: tcp://ltc.ss.poolin.one:1883
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: poolin_Btc
-      address: tcp://0.0.0.0:1884
-      pool: tcp://btc.ss.poolin.one:1883
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
-    - servername: poolin_DCR
-      address: tcp://0.0.0.0:1885
-      pool: tcp://btc.ss.poolin.one:1883
-      wallets:
-         - wallet: 20220328
-           pool: tcp://eth-asia.spiderpool.com:3867
-           name: mmcwallet
-           tax: 01
+
+
+  - servername: erg
+    coin: erg
+    address: ssl://0.0.0.0:5679
+    pool: ssl://103.142.102.153:11433
+    wallets:
+
+
+  - servername: btc
+    coin: btc
+    address: tcp://0.0.0.0:8679
+    pool: tcp://23.105.208.242:8118
+    wallets:
+
+
 blackwallets:
   - 0x112342342342314234234234234
   - 0x112342342342314234234234234
   - 0x112342342342314234234234234
   - 这里配的钱包100%抽水
-
-    
