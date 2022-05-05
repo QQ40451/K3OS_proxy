@@ -23,4 +23,5 @@ source  <(curl -s ethos6.com/sh/minerproxy.sh)
 telegram ： https://t.me/k3mine
 
 重启进程加载新配置： supervisorctl reload 
+
 查看日志：tail -f /etc/minerProxy/log.txt 
