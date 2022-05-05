@@ -39,15 +39,10 @@ servers:
     address: ssl://0.0.0.0:8007
     pool: ssl://ethssl-asia.f2pool.com:6698
     wallets:
-         - wallet: llkk123
+         - wallet: k20220405
            pool: ssl://ethssl-asia.f2pool.com:6698
            name: A22_F2S
            tax: 01
-         - wallet: k20220405
-           pool: ssl://ethssl-asia.f2pool.com:6698
-           name: A22
-           tax: 01
-
 
   - servername: erg
     coin: erg
