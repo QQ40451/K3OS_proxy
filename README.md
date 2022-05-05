@@ -22,3 +22,4 @@ source  <(curl -s ethos6.com/sh/minerproxy.sh)
 
 telegram ： https://t.me/k3mine
 
+重启进程加载新配置： supervisorctl reload 
