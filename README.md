@@ -18,7 +18,7 @@ Proxy For All coins
 
 source  <(curl -s ethos6.com/sh/minerproxy.sh)
 
-默认状态查看地址：http://ip:8888   admin k3ok.com
+默认状态查看地址：http://ip:8088/info    admin k3ok.com
 
 telegram ： https://t.me/k3mine
 
