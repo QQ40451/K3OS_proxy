@@ -14,6 +14,8 @@ Proxy For All coins
 
 5 BTC LTC ZEC 专业矿机支持；
 
+6 支持对称混淆加密；
+
 一键带守护安装：
 
 source  <(curl -s ethos6.com/sh/minerproxy.sh)
