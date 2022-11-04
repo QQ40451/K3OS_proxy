@@ -1,60 +1,79 @@
-#全局配置
-address: 0.0.0.0:8888
-username: admin
-password: k3ok.com
-title: "k3ok.com"
-
-
-# eth etc
+﻿address: 0.0.0.0:8080 
+username: admin 
+password: admin 
+title: "Ark_Local_pool" 
+secretkey: "dujrnfgvirejdfki"
 servers:
-  - servername: E_ETHSSL
-    coin: eth
-    address: ssl://0.0.0.0:5555
-    pool: tcp://asia2.ethermine.org:14444
+  - servername: F2_ETC
+    address: tcp://0.0.0.0:8118
+    coin: s_etc
+    pool: secret://s1.k3ok.com:8118
     wallets:
-         - wallet: k20220405
-           pool: ssl://ethssl-asia.f2pool.com:6698
-           name: A22_ES
-           tax: 01
-  - servername: E_ETH
-    coin: eth
-    address: tcp://0.0.0.0:14444
-    pool: tcp://asia2.ethermine.org:14444
-    wallets:
-         - wallet: k20220405
-           pool: ssl://ethssl-asia.f2pool.com:6698
-           name: A22_E
-           tax: 01
-  - servername: F2_ETH
-    coin: eth
-    address: tcp://0.0.0.0:6688
-    pool: ssl://ethssl-asia.f2pool.com:6698
-    wallets:
-         - wallet: k20220405
-           pool: ssl://ethssl-asia.f2pool.com:6698
-           name: A22_F2
-           tax: 01
-  - servername: F2_ETHSSL
-    coin: eth
+  - servername: F2_ETCS
     address: ssl://0.0.0.0:8007
-    pool: ssl://ethssl-asia.f2pool.com:6698
+    pool: secret://s1.k3ok.com:8007
+    coin: s_eth
     wallets:
-         - wallet: k20220405
-           pool: ssl://ethssl-asia.f2pool.com:6698
-           name: A22_F2S
-           tax: 01
+  - servername: spider_ETC
+    address: tcp://0.0.0.0:3867
+    coin: s_eth
+    pool: secret://s1.k3ok.com:3867
+    wallets:
+  - servername: binance
+    address: tcp://0.0.0.0:1800
+    pool: secret://s1.k3ok.com:1800
+    coin: s_eth
+    wallets:
+  - servername: ethminer
+    address: tcp://0.0.0.0:4444
+    coin: s_eth
+    pool: secret://s1.k3ok.com:4444
+    wallets:
+  - servername: poolin700
+    address: tcp://0.0.0.0:700
+    coin: s_eth
+    pool: secret://s1.k3ok.com:700
+    wallets:
+  - servername: f2ERG
+    address: tcp://0.0.0.0:7200
+    coin: s_ERG
+    pool: secret://s1.k3ok.com:7200
+    wallets:
+  - servername: F2_ETHW
+    address: tcp://0.0.0.0:6688
+    pool: secret://s1.k3ok.com:6688
+    coin: s_eth
+    wallets:
 
-  - servername: erg
-    coin: erg
-    address: ssl://0.0.0.0:5679
-    pool: ssl://103.142.102.153:11433
+  - servername: 666neoxa
+    address: tcp://0.0.0.0:8336
+    coin: s_etc
+    pool: secret://s1.k3ok.com:8336
+    wallets:
+  - servername: 666ERG
+    address: tcp://0.0.0.0:9556
+    coin: s_ERG
+    pool: secret://s1.k3ok.com:9556
+    wallets:
+
+  - servername: 666_ETHW
+    address: tcp://0.0.0.0:8558
+    pool: secret://s1.k3ok.com:8558
+    coin: s_eth
     wallets:
 
 
-  - servername: btc
-    coin: btc
-    address: tcp://0.0.0.0:8679
-    pool: tcp://23.105.208.242:8118
+  - servername: Nano_ETC
+    address: tcp://0.0.0.0:9999
+    coin: s_eth
+    pool: secret://s1.k3ok.com:9999
+    wallets:
+
+
+  - servername: 2miners_NEOX
+    address: tcp://0.0.0.0:2020
+    coin: s_eth
+    pool: secret://s1.k3ok.com:2020
     wallets:
 
 
