@@ -10,7 +10,7 @@ Proxy For All coins
 
 3 可自定义抽水比例；
 
-4 cpu  内存占用极低；
+4 cpu  内存占用极低,1核2G 轻量云，linux 带机量约为800台；
 
 5 BTC LTC ZEC 专业矿机支持；
 
