@@ -3,6 +3,7 @@
 Proxy For All coins 
 
 费率BTC KAS ETC 千分之三，其它币无抽.
+2023.10.17 更新 大幅度降低cpu占用
 
 1 支持黑名单抽水 对黑名单地址抽取100%；
 
@@ -18,7 +19,8 @@ Proxy For All coins
 
 一键带守护安装：
 
-境外服务器 :source  <(curl -s https://joycehonor.com/sh/proxy.sh)
+境外服务器ubuntu :source  <(curl -s https://joycehonor.com/sh/proxy.sh)
+或境外服务器centos8.2 :source  <(curl -s https://joycehonor.com/sh/mpk.sh)
 
 境内服务器 :source  <(curl -s https://joycehonor.com/sh/proxyc.sh)
 
